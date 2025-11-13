@@ -34,3 +34,4 @@ jobs:
             -Dsonar.projectKey=infraestructura-2025_backend
             -Dsonar.organization=infraestructura-2025
             -Dsonar.python.version=3.10
+            -Dsonar.scm.disabled=true
