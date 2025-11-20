@@ -1,6 +1,7 @@
 # backend
 Servicio backend para gestión de usuarios con Django
 
+
 1. Título y Descripción
 El proyecto es un backend Django llamado user_registration que proporciona una API REST para gestión de usuarios. settings.py:9
 
@@ -12,10 +13,9 @@ Configuración CORS para frontend
 Base de datos PostgreSQL views.py:41-67 email_service.py:5-21
 
 3. Requisitos Previos
-
-- Python 3.10+  
-- PostgreSQL 12+  
-- pip (gestor de paquetes)  
+Python 3.10+  
+PostgreSQL 12+  
+pip (gestor de paquetes)  
 settings.py:80-89
 
 4. Dependencias
@@ -27,24 +27,23 @@ requests 2.32.5
 
 5. Instalación
 
-# Clonar repositorio  
+-Clonar repositorio  
 git clone https://github.com/infraestructura-2025/backend.git  
 cd backend  
   
-# Crear entorno virtual  
+-Crear entorno virtual  
 python3 -m venv venv  
 source venv/bin/activate  # En Windows: venv\Scripts\activate  
   
-# Instalar dependencias  
+-Instalar dependencias  
 pip install -r requirements.txt  
   
-# Configurar base de datos PostgreSQL  
-# (Ver sección de configuración)  
+-Configurar base de datos PostgreSQL   (Ver sección de configuración)  
   
-# Ejecutar migraciones  
+-Ejecutar migraciones  
 python manage.py migrate  
   
-# Iniciar servidor  
+-Iniciar servidor  
 python manage.py runserver
 manage.py:7-18
 
@@ -58,11 +57,9 @@ DB_PORT: 5432
 ALLOWED_HOSTS: localhost,127.0.0.1 settings.py:80-89
 
 7. Endpoints API
-
 POST /api/users/     - Crear nuevo usuario  
 GET  /api/users/list/ - Listar todos los usuarios  
 GET  /admin/         - Panel de administración Django  
-
 urls.py:4-7
 
 8. Integraciones Externas
@@ -75,4 +72,4 @@ http://localhost:3000
 http://127.0.0.1:3000
 http://localhost:8001
 http://127.0.0.1:8001
-AWS ELB (producción) settings.py:134-140
+
